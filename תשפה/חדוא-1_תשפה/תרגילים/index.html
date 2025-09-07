@@ -6,33 +6,15 @@
     <style>
         body {
             background-color: rgb(255, 250, 186);
-            font-size: 20px;
-            margin: 0;
-            padding: 0;
-        }
-        .top-row {
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
-        }
-        .second-row {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin: 10px 20px;
-        }
-        .author {
-            font-size: 16px;
-            text-align: left;
-        }
-        .breadcrumbs {
-            font-size: 16px;
-            text-align: right;
-        }
-        h2.page-title {
-            font-size: 40px;
             text-align: center;
-            margin: 0;
+            font-size: 20px;
+        }
+        body > p {
+            text-align: right;
+            font-size: 18px;
+        }
+        h2 {
+            font-size: 40px;
         }
         a {
             font-size: 32px;
@@ -42,18 +24,26 @@
         a:visited { color: blue; }
         a:hover { color: darkred; }
         a:active { color: blue; }
+
+        /* Middle column links smaller */
         .course-links a {
             font-size: 22px;
+        }
+
+        /* Top-left author text */
+        .author {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 16px;
+            font-family: Arial, sans-serif;
         }
     </style>
 </head>
 <body>
-    
-    <div class="second-row">
-        <div class="author">ירמיהו מילר &nbsp;&nbsp; jeremmi@sce.ac.il</div>
-        <h2 class="page-title">תרגילים</h2>
-        <div class="breadcrumbs"><a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפה">תשפה</a> / <a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפה/חדוא-1_תשפה">חדוא-1_תשפה</a> / <a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפה/חדוא-1_תשפה/תרגילים">תרגילים</a></div>
-    </div>
+    <div class="author">ירמיהו מילר &nbsp;&nbsp; jeremmi@sce.ac.il</div>
+    <p style="text-align: right;"><a href="https://jeremysharonmiller.github.io/maths_physics.github.io">דף הבית</a> / <a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפה">תשפה</a> / <a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפה/חדוא-1_תשפה">חדוא-1_תשפה</a> / <a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפה/חדוא-1_תשפה/תרגילים">תרגילים</a></p>
+    <h2>תרגילים</h2>
     <br><br>
 <a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפה/חדוא-1_תשפה/תרגילים/הגדרות-ומשפטים.pdf">הגדרות-ומשפטים.pdf</a>
 <br><br>
