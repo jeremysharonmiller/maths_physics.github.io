@@ -21,18 +21,27 @@
             color: blue;
             text-decoration: underline;
         }
-        a:visited {
-            color: blue;
+        a:visited { color: blue; }
+        a:hover { color: darkred; }
+        a:active { color: blue; }
+
+        /* Middle column links smaller */
+        .course-links a {
+            font-size: 22px;
         }
-        a:hover {
-            color: darkred;
-        }
-        a:active {
-            color: blue;
+
+        /* Top-left author text */
+        .author {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 16px;
+            font-family: Arial, sans-serif;
         }
     </style>
 </head>
 <body>
+    <div class="author">ירמיהו מילר &nbsp;&nbsp; jeremmi@sce.ac.il</div>
     <p style="text-align: right;"><a href="https://jeremysharonmiller.github.io/maths_physics.github.io">דף הבית</a></p>
     <h2>דף הבית</h2>
     
@@ -43,7 +52,9 @@
   </div>
   <div style="flex: 1; text-align: center; min-width: 150px;">
     <h3>לפי קורס</h3>
-    <a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפד/אלגברה-1_תשפד">אלגברה-1_תשפד</a><br><br><a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפה/אלגברה-1_תשפה">אלגברה-1_תשפה</a><br><br><a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפד/אלגברה-2_תשפד">אלגברה-2_תשפד</a><br><br><a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפה/אלגברה-2_תשפה_סמסטר-א">אלגברה-2_תשפה_סמסטר-א</a><br><br><a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפה/אלגברה-2_תשפה_סמסטר-ב">אלגברה-2_תשפה_סמסטר-ב</a><br><br><a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפג/אלגברה-ליניארית-1-למדמח_תשפג">אלגברה-ליניארית-1-למדמח_תשפג</a><br><br><a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפג/חדוא-1-להנדסת_כימית_תשפג">חדוא-1-להנדסת_כימית_תשפג</a><br><br><a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפג/חדוא-1-למדמח_תשפג">חדוא-1-למדמח_תשפג</a><br><br><a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפד/חדוא-1_תשפד">חדוא-1_תשפד</a><br><br><a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפה/חדוא-1_תשפה">חדוא-1_תשפה</a><br><br><a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפד/חדוא-2_תשפד">חדוא-2_תשפד</a><br><br><a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפה/חדוא2_תשפה_סמסטר-ב">חדוא2_תשפה_סמסטר-ב</a><br><br><a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפה/חישוביות_וסיבוכיות_תשפה_סמסטר-א">חישוביות_וסיבוכיות_תשפה_סמסטר-א</a><br><br><a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפה/חישוביות_וסיבוכיות_תשפה_סמסטר-ב">חישוביות_וסיבוכיות_תשפה_סמסטר-ב</a><br><br><a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפו/חישוביות_וסיבוכיות_תשפו_סמסטר-א">חישוביות_וסיבוכיות_תשפו_סמסטר-א</a><br><br><a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפו/חישוביות_וסיבוכיות_תשפו_סמסטר-ב">חישוביות_וסיבוכיות_תשפו_סמסטר-ב</a><br><br><a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפא/מבוא_להסתברות_וסטטיסטיקה">מבוא_להסתברות_וסטטיסטיקה</a><br><br><a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפה/קריפטוגרפיה_תשפה">קריפטוגרפיה_תשפה</a><br><br><a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפו/קריפטוגרפיה_תשפו">קריפטוגרפיה_תשפו</a><br><br><a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפה/תורת_המשחקים_תשפה">תורת_המשחקים_תשפה</a>
+    <div class="course-links">
+      <a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפד/אלגברה-1_תשפד">אלגברה-1_תשפד</a><br><br><a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפה/אלגברה-1_תשפה">אלגברה-1_תשפה</a><br><br><a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפד/אלגברה-2_תשפד">אלגברה-2_תשפד</a><br><br><a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפה/אלגברה-2_תשפה_סמסטר-א">אלגברה-2_תשפה_סמסטר-א</a><br><br><a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפה/אלגברה-2_תשפה_סמסטר-ב">אלגברה-2_תשפה_סמסטר-ב</a><br><br><a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפג/אלגברה-ליניארית-1-למדמח_תשפג">אלגברה-ליניארית-1-למדמח_תשפג</a><br><br><a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפג/חדוא-1-להנדסת_כימית_תשפג">חדוא-1-להנדסת_כימית_תשפג</a><br><br><a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפג/חדוא-1-למדמח_תשפג">חדוא-1-למדמח_תשפג</a><br><br><a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפד/חדוא-1_תשפד">חדוא-1_תשפד</a><br><br><a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפה/חדוא-1_תשפה">חדוא-1_תשפה</a><br><br><a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפד/חדוא-2_תשפד">חדוא-2_תשפד</a><br><br><a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפה/חדוא2_תשפה_סמסטר-ב">חדוא2_תשפה_סמסטר-ב</a><br><br><a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפה/חישוביות_וסיבוכיות_תשפה_סמסטר-א">חישוביות_וסיבוכיות_תשפה_סמסטר-א</a><br><br><a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפה/חישוביות_וסיבוכיות_תשפה_סמסטר-ב">חישוביות_וסיבוכיות_תשפה_סמסטר-ב</a><br><br><a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפו/חישוביות_וסיבוכיות_תשפו_סמסטר-א">חישוביות_וסיבוכיות_תשפו_סמסטר-א</a><br><br><a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפו/חישוביות_וסיבוכיות_תשפו_סמסטר-ב">חישוביות_וסיבוכיות_תשפו_סמסטר-ב</a><br><br><a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפא/מבוא_להסתברות_וסטטיסטיקה">מבוא_להסתברות_וסטטיסטיקה</a><br><br><a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפה/קריפטוגרפיה_תשפה">קריפטוגרפיה_תשפה</a><br><br><a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפו/קריפטוגרפיה_תשפו">קריפטוגרפיה_תשפו</a><br><br><a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפה/תורת_המשחקים_תשפה">תורת_המשחקים_תשפה</a>
+    </div>
   </div>
   <div style="flex: 1; text-align: center; min-width: 150px;">
     <h3>לפי שנה</h3>
