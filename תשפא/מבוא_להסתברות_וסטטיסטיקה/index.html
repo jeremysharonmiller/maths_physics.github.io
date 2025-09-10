@@ -38,6 +38,35 @@
             font-size: 16px;
             font-family: Arial, sans-serif;
         }
+
+        /* Tile grid for special links */
+        .tiles {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .tile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            direction: ltr;
+            width: 180px; /* ensures 4 per row */
+        }
+        .tile img {
+            height: 120px;
+            margin-bottom: 12px;
+        }
+        .tile span {
+            font-size: 22px;
+            color: blue;
+            text-align: center;
+        }
+        .tile:hover span {
+            color: darkred;
+        }
     </style>
 </head>
 <body>
@@ -45,23 +74,44 @@
     <p style="text-align: right;"><a href="https://jeremysharonmiller.github.io/maths_physics.github.io">דף הבית</a> / <a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפא">תשפא</a> / <a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפא/מבוא_להסתברות_וסטטיסטיקה">מבוא_להסתברות_וסטטיסטיקה</a></p>
     <h2>מבוא_להסתברות_וסטטיסטיקה</h2>
     
-<br><br>
-<a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפא/מבוא_להסתברות_וסטטיסטיקה/דף_נוסחאות" style="display: flex; flex-direction: column; align-items: center; text-decoration: none; direction: ltr;">
-    <img src="https://jeremysharonmiller.github.io/maths_physics.github.io/pics/formulas.png" alt="דף_נוסחאות" style="height: 120px; margin-bottom: 12px;">
+<div class="tiles">
+    
+<a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפא/מבוא_להסתברות_וסטטיסטיקה/דף_נוסחאות" class="tile">
+    <img src="https://jeremysharonmiller.github.io/maths_physics.github.io/pics/formulas.png" alt="דף_נוסחאות">
     <span>דף_נוסחאות</span>
 </a>
 
-<br><br>
-<a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפא/מבוא_להסתברות_וסטטיסטיקה/דפי_הרצאות" style="display: flex; flex-direction: column; align-items: center; text-decoration: none; direction: ltr;">
-    <img src="https://jeremysharonmiller.github.io/maths_physics.github.io/pics/lectures.png" alt="דפי_הרצאות" style="height: 120px; margin-bottom: 12px;">
+<a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפא/מבוא_להסתברות_וסטטיסטיקה/דפי_הרצאות" class="tile">
+    <img src="https://jeremysharonmiller.github.io/maths_physics.github.io/pics/lectures.png" alt="דפי_הרצאות">
     <span>דפי_הרצאות</span>
 </a>
 
-<br><br>
-<a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפא/מבוא_להסתברות_וסטטיסטיקה/תרגילים" style="display: flex; flex-direction: column; align-items: center; text-decoration: none; direction: ltr;">
-    <img src="https://jeremysharonmiller.github.io/maths_physics.github.io/pics/targilim.png" alt="תרגילים" style="height: 120px; margin-bottom: 12px;">
+<a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפא/מבוא_להסתברות_וסטטיסטיקה/מבחנים_ובחנים_קודמים" class="tile">
+    <img src="https://jeremysharonmiller.github.io/maths_physics.github.io/pics/past_exams.png" alt="מבחנים_ובחנים_קודמים">
+    <span>מבחנים_ובחנים_קודמים</span>
+</a>
+
+<a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפא/מבוא_להסתברות_וסטטיסטיקה/סילבוס" class="tile">
+    <img src="https://jeremysharonmiller.github.io/maths_physics.github.io/pics/syllabus.png" alt="סילבוס">
+    <span>סילבוס</span>
+</a>
+
+<a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפא/מבוא_להסתברות_וסטטיסטיקה/עבודות_הגשה" class="tile">
+    <img src="https://jeremysharonmiller.github.io/maths_physics.github.io/pics/avodat_hagasha.png" alt="עבודות_הגשה">
+    <span>עבודות_הגשה</span>
+</a>
+
+<a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפא/מבוא_להסתברות_וסטטיסטיקה/קודים_שימושים" class="tile">
+    <img src="https://jeremysharonmiller.github.io/maths_physics.github.io/pics/python_code.png" alt="קודים_שימושים">
+    <span>קודים_שימושים</span>
+</a>
+
+<a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפא/מבוא_להסתברות_וסטטיסטיקה/תרגילים" class="tile">
+    <img src="https://jeremysharonmiller.github.io/maths_physics.github.io/pics/targilim.png" alt="תרגילים">
     <span>תרגילים</span>
 </a>
+
+</div>
 
 </body>
 </html>
