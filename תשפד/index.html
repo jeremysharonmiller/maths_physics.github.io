@@ -41,8 +41,8 @@
 
         /* Tile grid for special links */
         .tiles {
-            display: flex;
-            flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: repeat(4, 220px);
             justify-content: center;
             gap: 30px;
             margin-top: 40px;
@@ -53,19 +53,31 @@
             align-items: center;
             text-decoration: none;
             direction: ltr;
-            width: 180px; /* ensures 4 per row */
         }
         .tile img {
             height: 120px;
             margin-bottom: 12px;
+            object-fit: contain;
         }
         .tile span {
             font-size: 22px;
             color: blue;
             text-align: center;
+            word-break: break-word;
         }
         .tile:hover span {
             color: darkred;
+        }
+
+        @media (max-width: 1000px) {
+            .tiles { grid-template-columns: repeat(3, 220px); }
+        }
+        @media (max-width: 720px) {
+            .tiles { grid-template-columns: repeat(2, 220px); }
+        }
+        @media (max-width: 420px) {
+            .tiles { grid-template-columns: 1fr; width: 100%; padding: 0 10px; }
+            .tile img { height: 90px; }
         }
     </style>
 </head>
@@ -73,6 +85,14 @@
     <div class="author">ירמיהו מילר &nbsp;&nbsp; jeremmi@sce.ac.il</div>
     <p style="text-align: right;"><a href="https://jeremysharonmiller.github.io/maths_physics.github.io">דף הבית</a> / <a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפד">תשפד</a></p>
     <h2>תשפד</h2>
-    <br><br><a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפד/אלגברה-1_תשפד">אלגברה-1_תשפד</a><br><br><a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפד/אלגברה-2_תשפד">אלגברה-2_תשפד</a><br><br><a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפד/חדוא-1_תשפד">חדוא-1_תשפד</a><br><br><a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפד/חדוא-2_תשפד">חדוא-2_תשפד</a>
+    <br><br>
+<a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפד/אלגברה-1_תשפד">אלגברה-1_תשפד</a>
+<br><br>
+<a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפד/אלגברה-2_תשפד">אלגברה-2_תשפד</a>
+<br><br>
+<a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפד/חדוא-1_תשפד">חדוא-1_תשפד</a>
+<br><br>
+<a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפד/חדוא-2_תשפד">חדוא-2_תשפד</a>
+
 </body>
 </html>

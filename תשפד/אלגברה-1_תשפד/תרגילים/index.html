@@ -41,8 +41,8 @@
 
         /* Tile grid for special links */
         .tiles {
-            display: flex;
-            flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: repeat(4, 220px);
             justify-content: center;
             gap: 30px;
             margin-top: 40px;
@@ -53,19 +53,31 @@
             align-items: center;
             text-decoration: none;
             direction: ltr;
-            width: 180px; /* ensures 4 per row */
         }
         .tile img {
             height: 120px;
             margin-bottom: 12px;
+            object-fit: contain;
         }
         .tile span {
             font-size: 22px;
             color: blue;
             text-align: center;
+            word-break: break-word;
         }
         .tile:hover span {
             color: darkred;
+        }
+
+        @media (max-width: 1000px) {
+            .tiles { grid-template-columns: repeat(3, 220px); }
+        }
+        @media (max-width: 720px) {
+            .tiles { grid-template-columns: repeat(2, 220px); }
+        }
+        @media (max-width: 420px) {
+            .tiles { grid-template-columns: 1fr; width: 100%; padding: 0 10px; }
+            .tile img { height: 90px; }
         }
     </style>
 </head>
@@ -73,6 +85,48 @@
     <div class="author">ירמיהו מילר &nbsp;&nbsp; jeremmi@sce.ac.il</div>
     <p style="text-align: right;"><a href="https://jeremysharonmiller.github.io/maths_physics.github.io">דף הבית</a> / <a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפד">תשפד</a> / <a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפד/אלגברה-1_תשפד">אלגברה-1_תשפד</a> / <a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפד/אלגברה-1_תשפד/תרגילים">תרגילים</a></p>
     <h2>תרגילים</h2>
-    <br><br><a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפד/אלגברה-1_תשפד/תרגילים/דף_חזרה.pdf">דף_חזרה.pdf</a><br><br><a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפד/אלגברה-1_תשפד/תרגילים/סיכום_הוכחות.pdf">סיכום_הוכחות.pdf</a><br><br><a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפד/אלגברה-1_תשפד/תרגילים/שאלות_חזרה.pdf">שאלות_חזרה.pdf</a><br><br><a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפד/אלגברה-1_תשפד/תרגילים/שאלות_חזרה_לבוחן.pdf">שאלות_חזרה_לבוחן.pdf</a><br><br><a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפד/אלגברה-1_תשפד/תרגילים/שאלות_שונות.pdf">שאלות_שונות.pdf</a><br><br><a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפד/אלגברה-1_תשפד/תרגילים/תרגילים_הוכחות.pdf">תרגילים_הוכחות.pdf</a><br><br><a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפד/אלגברה-1_תשפד/תרגילים/תרגילים_מערכת_משוואות_שיטת_גאוס.pdf">תרגילים_מערכת_משוואות_שיטת_גאוס.pdf</a><br><br><a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפד/אלגברה-1_תשפד/תרגילים/תרגילים_נוספים_מערכת_משוואות_מעל_Zp_ופתרונות.pdf">תרגילים_נוספים_מערכת_משוואות_מעל_Zp_ופתרונות.pdf</a><br><br><a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפד/אלגברה-1_תשפד/תרגילים/תרגילים_נוספים_מערכת_משוואות_עם_פרמטר.pdf">תרגילים_נוספים_מערכת_משוואות_עם_פרמטר.pdf</a><br><br><a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפד/אלגברה-1_תשפד/תרגילים/תרגילים_שונים.pdf">תרגילים_שונים.pdf</a><br><br><a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפד/אלגברה-1_תשפד/תרגילים/תרגילים_1_מערכות_לינאריות.pdf">תרגילים_1_מערכות_לינאריות.pdf</a><br><br><a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפד/אלגברה-1_תשפד/תרגילים/תרגילים_2_שדות.pdf">תרגילים_2_שדות.pdf</a><br><br><a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפד/אלגברה-1_תשפד/תרגילים/תרגילים_3_שעור-3_כפל_מטריצות_וייצוג_מערכת.pdf">תרגילים_3_שעור-3_כפל_מטריצות_וייצוג_מערכת.pdf</a><br><br><a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפד/אלגברה-1_תשפד/תרגילים/תרגילים_4.pdf">תרגילים_4.pdf</a><br><br><a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפד/אלגברה-1_תשפד/תרגילים/תרגילים_5_דטרמיננטות_כלל_קרמר.pdf">תרגילים_5_דטרמיננטות_כלל_קרמר.pdf</a><br><br><a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפד/אלגברה-1_תשפד/תרגילים/תרגילים_6_תת_מרחבים.pdf">תרגילים_6_תת_מרחבים.pdf</a><br><br><a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפד/אלגברה-1_תשפד/תרגילים/תרגילים_7_פרישה_תלות_ליניארית.pdf">תרגילים_7_פרישה_תלות_ליניארית.pdf</a><br><br><a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפד/אלגברה-1_תשפד/תרגילים/תרגילים_8_הוכחות_ותלות_ליניאריות.pdf">תרגילים_8_הוכחות_ותלות_ליניאריות.pdf</a><br><br><a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפד/אלגברה-1_תשפד/תרגילים/תרגילים_9.pdf">תרגילים_9.pdf</a><br><br><a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפד/אלגברה-1_תשפד/תרגילים/תרגילים_10_העתקות_ליניאריות.pdf">תרגילים_10_העתקות_ליניאריות.pdf</a><br><br><a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפד/אלגברה-1_תשפד/תרגילים/תרגילים_11_חיתוך_סכום-ישר.pdf">תרגילים_11_חיתוך_סכום-ישר.pdf</a>
+    <br><br>
+<a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפד/אלגברה-1_תשפד/תרגילים/דף_חזרה.pdf">דף_חזרה.pdf</a>
+<br><br>
+<a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפד/אלגברה-1_תשפד/תרגילים/סיכום_הוכחות.pdf">סיכום_הוכחות.pdf</a>
+<br><br>
+<a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפד/אלגברה-1_תשפד/תרגילים/שאלות_חזרה.pdf">שאלות_חזרה.pdf</a>
+<br><br>
+<a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפד/אלגברה-1_תשפד/תרגילים/שאלות_חזרה_לבוחן.pdf">שאלות_חזרה_לבוחן.pdf</a>
+<br><br>
+<a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפד/אלגברה-1_תשפד/תרגילים/שאלות_שונות.pdf">שאלות_שונות.pdf</a>
+<br><br>
+<a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפד/אלגברה-1_תשפד/תרגילים/תרגילים_הוכחות.pdf">תרגילים_הוכחות.pdf</a>
+<br><br>
+<a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפד/אלגברה-1_תשפד/תרגילים/תרגילים_מערכת_משוואות_שיטת_גאוס.pdf">תרגילים_מערכת_משוואות_שיטת_גאוס.pdf</a>
+<br><br>
+<a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפד/אלגברה-1_תשפד/תרגילים/תרגילים_נוספים_מערכת_משוואות_מעל_Zp_ופתרונות.pdf">תרגילים_נוספים_מערכת_משוואות_מעל_Zp_ופתרונות.pdf</a>
+<br><br>
+<a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפד/אלגברה-1_תשפד/תרגילים/תרגילים_נוספים_מערכת_משוואות_עם_פרמטר.pdf">תרגילים_נוספים_מערכת_משוואות_עם_פרמטר.pdf</a>
+<br><br>
+<a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפד/אלגברה-1_תשפד/תרגילים/תרגילים_שונים.pdf">תרגילים_שונים.pdf</a>
+<br><br>
+<a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפד/אלגברה-1_תשפד/תרגילים/תרגילים_1_מערכות_לינאריות.pdf">תרגילים_1_מערכות_לינאריות.pdf</a>
+<br><br>
+<a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפד/אלגברה-1_תשפד/תרגילים/תרגילים_2_שדות.pdf">תרגילים_2_שדות.pdf</a>
+<br><br>
+<a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפד/אלגברה-1_תשפד/תרגילים/תרגילים_3_שעור-3_כפל_מטריצות_וייצוג_מערכת.pdf">תרגילים_3_שעור-3_כפל_מטריצות_וייצוג_מערכת.pdf</a>
+<br><br>
+<a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפד/אלגברה-1_תשפד/תרגילים/תרגילים_4.pdf">תרגילים_4.pdf</a>
+<br><br>
+<a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפד/אלגברה-1_תשפד/תרגילים/תרגילים_5_דטרמיננטות_כלל_קרמר.pdf">תרגילים_5_דטרמיננטות_כלל_קרמר.pdf</a>
+<br><br>
+<a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפד/אלגברה-1_תשפד/תרגילים/תרגילים_6_תת_מרחבים.pdf">תרגילים_6_תת_מרחבים.pdf</a>
+<br><br>
+<a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפד/אלגברה-1_תשפד/תרגילים/תרגילים_7_פרישה_תלות_ליניארית.pdf">תרגילים_7_פרישה_תלות_ליניארית.pdf</a>
+<br><br>
+<a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפד/אלגברה-1_תשפד/תרגילים/תרגילים_8_הוכחות_ותלות_ליניאריות.pdf">תרגילים_8_הוכחות_ותלות_ליניאריות.pdf</a>
+<br><br>
+<a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפד/אלגברה-1_תשפד/תרגילים/תרגילים_9.pdf">תרגילים_9.pdf</a>
+<br><br>
+<a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפד/אלגברה-1_תשפד/תרגילים/תרגילים_10_העתקות_ליניאריות.pdf">תרגילים_10_העתקות_ליניאריות.pdf</a>
+<br><br>
+<a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפד/אלגברה-1_תשפד/תרגילים/תרגילים_11_חיתוך_סכום-ישר.pdf">תרגילים_11_חיתוך_סכום-ישר.pdf</a>
+
 </body>
 </html>
