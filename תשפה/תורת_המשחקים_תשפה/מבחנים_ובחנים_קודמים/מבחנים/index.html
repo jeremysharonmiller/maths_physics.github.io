@@ -26,7 +26,7 @@
         a:active { color: blue; }
 
         /* Middle column links smaller */
-        .course-links a {
+        .course-grid a {
             font-size: 22px;
         }
 
@@ -69,11 +69,24 @@
             color: darkred;
         }
 
+        /* New grid for courses */
+        .course-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px 40px;
+            text-align: right;
+            margin-top: 20px;
+        }
+        .course-grid div {
+            text-align: center;
+        }
+
         @media (max-width: 1000px) {
             .tiles { grid-template-columns: repeat(3, 220px); }
+            .course-grid { grid-template-columns: repeat(2, 1fr); }
         }
-        @media (max-width: 720px) {
             .tiles { grid-template-columns: repeat(2, 220px); }
+            .course-grid { grid-template-columns: 1fr; }
         }
         @media (max-width: 420px) {
             .tiles { grid-template-columns: 1fr; width: 100%; padding: 0 10px; }
@@ -83,8 +96,9 @@
 </head>
 <body>
     <div class="author">ירמיהו מילר &nbsp;&nbsp; jeremmi@sce.ac.il</div>
-    <p style="text-align: right;"><a href="https://jeremysharonmiller.github.io/maths_physics.github.io">דף הבית</a> / <a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפה">תשפה</a> / <a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפה/תורת_המשחקים_תשפה">תורת_המשחקים_תשפה</a> / <a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפה/תורת_המשחקים_תשפה/מבחנים_ובחנים_קודמים">מבחנים_ובחנים_קודמים</a> / <a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפה/תורת_המשחקים_תשפה/מבחנים_ובחנים_קודמים/מבחנים">מבחנים</a></p>
-    <h2>מבחנים</h2>
+    <p style="text-align: right;"><a href="https://jeremysharonmiller.github.io/maths_physics.github.io">דף הבית</a> / <a href="https://jeremysharonmiller.github.io/maths_physics.github.io/מבחנים">מבחנים</a> / <a href="https://jeremysharonmiller.github.io/maths_physics.github.io/מבחנים/תורת_המשחקים">תורת_המשחקים</a></p>
+    <h2>תורת_המשחקים</h2>
+    <br><br>
 <a href="https://jeremysharonmiller.github.io/maths_physics.github.io/מבחנים/תורת_המשחקים/מבחן_תורת-המשחקים_תשפד_סמסטר-ב_מועד-א_00.pdf">מבחן_תורת-המשחקים_תשפד_סמסטר-ב_מועד-א_00.pdf</a>
 <br><br>
 <a href="https://jeremysharonmiller.github.io/maths_physics.github.io/מבחנים/תורת_המשחקים/מבחן_תורת-המשחקים_תשפד_סמסטר-ב_מועד-ב_00.pdf">מבחן_תורת-המשחקים_תשפד_סמסטר-ב_מועד-ב_00.pdf</a>
@@ -98,6 +112,20 @@
 <a href="https://jeremysharonmiller.github.io/maths_physics.github.io/מבחנים/תורת_המשחקים/מבחן_תורת-המשחקים_מבחן-לדוגמה-2_00.pdf">מבחן_תורת-המשחקים_מבחן-לדוגמה-2_00.pdf</a>
 <br><br>
 <a href="https://jeremysharonmiller.github.io/maths_physics.github.io/מבחנים/תורת_המשחקים/מבחן_תורת-המשחקים_מבחן-לדוגמה-3_00.pdf">מבחן_תורת-המשחקים_מבחן-לדוגמה-3_00.pdf</a>
+            .tiles { grid-template-columns: repeat(2, 220px); }
+            .course-grid { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 420px) {
+            .tiles { grid-template-columns: 1fr; width: 100%; padding: 0 10px; }
+            .tile img { height: 90px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="author">ירמיהו מילר &nbsp;&nbsp; jeremmi@sce.ac.il</div>
+    <p style="text-align: right;"><a href="https://jeremysharonmiller.github.io/maths_physics.github.io">דף הבית</a> / <a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפה">תשפה</a> / <a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפה/תורת_המשחקים_תשפה">תורת_המשחקים_תשפה</a> / <a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפה/תורת_המשחקים_תשפה/מבחנים_ובחנים_קודמים">מבחנים_ובחנים_קודמים</a> / <a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפה/תורת_המשחקים_תשפה/מבחנים_ובחנים_קודמים/מבחנים">מבחנים</a></p>
+    <h2>מבחנים</h2>
+    <br><br>
 <a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפה/תורת_המשחקים_תשפה/מבחנים_ובחנים_קודמים/מבחנים/tmp.PGc9dxycaZ">tmp.PGc9dxycaZ</a>
 
 </body>

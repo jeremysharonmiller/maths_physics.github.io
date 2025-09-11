@@ -26,7 +26,7 @@
         a:active { color: blue; }
 
         /* Middle column links smaller */
-        .course-links a {
+        .course-grid a {
             font-size: 22px;
         }
 
@@ -69,11 +69,44 @@
             color: darkred;
         }
 
+        /* New grid for courses */
+        .course-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px 40px;
+            text-align: right;
+            margin-top: 20px;
+        }
+        .course-grid div {
+            text-align: center;
+        }
+
         @media (max-width: 1000px) {
             .tiles { grid-template-columns: repeat(3, 220px); }
+            .course-grid { grid-template-columns: repeat(2, 1fr); }
         }
-        @media (max-width: 720px) {
             .tiles { grid-template-columns: repeat(2, 220px); }
+            .course-grid { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 420px) {
+            .tiles { grid-template-columns: 1fr; width: 100%; padding: 0 10px; }
+            .tile img { height: 90px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="author">ירמיהו מילר &nbsp;&nbsp; jeremmi@sce.ac.il</div>
+    <p style="text-align: right;"><a href="https://jeremysharonmiller.github.io/maths_physics.github.io">דף הבית</a> / <a href="https://jeremysharonmiller.github.io/maths_physics.github.io/בחנים">בחנים</a> / <a href="https://jeremysharonmiller.github.io/maths_physics.github.io/בחנים/חדוא-2">חדוא-2</a></p>
+    <h2>חדוא-2</h2>
+    <br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+            .tiles { grid-template-columns: repeat(2, 220px); }
+            .course-grid { grid-template-columns: 1fr; }
         }
         @media (max-width: 420px) {
             .tiles { grid-template-columns: 1fr; width: 100%; padding: 0 10px; }
@@ -85,11 +118,6 @@
     <div class="author">ירמיהו מילר &nbsp;&nbsp; jeremmi@sce.ac.il</div>
     <p style="text-align: right;"><a href="https://jeremysharonmiller.github.io/maths_physics.github.io">דף הבית</a> / <a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפב">תשפב</a> / <a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפב/חדוא-2_תשפב_סמסטר-ב">חדוא-2_תשפב_סמסטר-ב</a> / <a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפב/חדוא-2_תשפב_סמסטר-ב/מבחנים_ובחנים_קודמים">מבחנים_ובחנים_קודמים</a> / <a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפב/חדוא-2_תשפב_סמסטר-ב/מבחנים_ובחנים_קודמים/בחנים">בחנים</a></p>
     <h2>בחנים</h2>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
+    <p>אין תתי תיקיות או קבצים</p>
 </body>
 </html>

@@ -26,7 +26,7 @@
         a:active { color: blue; }
 
         /* Middle column links smaller */
-        .course-links a {
+        .course-grid a {
             font-size: 22px;
         }
 
@@ -69,11 +69,24 @@
             color: darkred;
         }
 
+        /* New grid for courses */
+        .course-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px 40px;
+            text-align: right;
+            margin-top: 20px;
+        }
+        .course-grid div {
+            text-align: center;
+        }
+
         @media (max-width: 1000px) {
             .tiles { grid-template-columns: repeat(3, 220px); }
+            .course-grid { grid-template-columns: repeat(2, 1fr); }
         }
-        @media (max-width: 720px) {
             .tiles { grid-template-columns: repeat(2, 220px); }
+            .course-grid { grid-template-columns: 1fr; }
         }
         @media (max-width: 420px) {
             .tiles { grid-template-columns: 1fr; width: 100%; padding: 0 10px; }
@@ -83,8 +96,9 @@
 </head>
 <body>
     <div class="author">ירמיהו מילר &nbsp;&nbsp; jeremmi@sce.ac.il</div>
-    <p style="text-align: right;"><a href="https://jeremysharonmiller.github.io/maths_physics.github.io">דף הבית</a> / <a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפד">תשפד</a> / <a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפד/חדוא-2_תשפד">חדוא-2_תשפד</a> / <a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפד/חדוא-2_תשפד/מבחנים_ובחנים_קודמים">מבחנים_ובחנים_קודמים</a> / <a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפד/חדוא-2_תשפד/מבחנים_ובחנים_קודמים/בחנים">בחנים</a></p>
-    <h2>בחנים</h2>
+    <p style="text-align: right;"><a href="https://jeremysharonmiller.github.io/maths_physics.github.io">דף הבית</a> / <a href="https://jeremysharonmiller.github.io/maths_physics.github.io/בחנים">בחנים</a> / <a href="https://jeremysharonmiller.github.io/maths_physics.github.io/בחנים/חדוא-2">חדוא-2</a></p>
+    <h2>חדוא-2</h2>
+    <br><br>
 <a href="https://jeremysharonmiller.github.io/maths_physics.github.io/בחנים/חדוא-2/בוחן-1_חדוא-2_תשפב_סמסטר-ב.pdf">בוחן-1_חדוא-2_תשפב_סמסטר-ב.pdf</a>
 <br><br>
 <a href="https://jeremysharonmiller.github.io/maths_physics.github.io/בחנים/חדוא-2/בוחן-2_חדוא-2_תשפב_סמסטר-ב.pdf">בוחן-2_חדוא-2_תשפב_סמסטר-ב.pdf</a>
@@ -96,5 +110,19 @@
 <a href="https://jeremysharonmiller.github.io/maths_physics.github.io/בחנים/חדוא-2/בוחן_חדוא2_תשפג_סמסטר-ק_00.pdf">בוחן_חדוא2_תשפג_סמסטר-ק_00.pdf</a>
 <br><br>
 <br><br>
+            .tiles { grid-template-columns: repeat(2, 220px); }
+            .course-grid { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 420px) {
+            .tiles { grid-template-columns: 1fr; width: 100%; padding: 0 10px; }
+            .tile img { height: 90px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="author">ירמיהו מילר &nbsp;&nbsp; jeremmi@sce.ac.il</div>
+    <p style="text-align: right;"><a href="https://jeremysharonmiller.github.io/maths_physics.github.io">דף הבית</a> / <a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפד">תשפד</a> / <a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפד/חדוא-2_תשפד">חדוא-2_תשפד</a> / <a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפד/חדוא-2_תשפד/מבחנים_ובחנים_קודמים">מבחנים_ובחנים_קודמים</a> / <a href="https://jeremysharonmiller.github.io/maths_physics.github.io/תשפד/חדוא-2_תשפד/מבחנים_ובחנים_קודמים/בחנים">בחנים</a></p>
+    <h2>בחנים</h2>
+    <p>אין תתי תיקיות או קבצים</p>
 </body>
 </html>
